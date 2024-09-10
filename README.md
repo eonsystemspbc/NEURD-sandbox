@@ -14,8 +14,14 @@ Conda environment, then requirements.txt
 
 ## Contents
 
-em_erl and em_util: Originally from https://github.com/PytorchConnectomics/em_erl and https://github.com/PytorchConnectomics/em_util, minor change made here to allow for relative import
+### scripts 
 
-scripts: folder containing scripts and example notebooks for data processing and moving
+folder containing various scripts and example notebooks for data processing.
 
-neurd_scripts: scripts for collecting neurd data and processing
+To run, setup a conda environment using requirements.txt
+
+### neurd_scripts
+
+scripts for processing meshes using neurd
+
+To run, setup docker as described by https://github.com/reimerlab/NEURD and copy scripts into docker container
