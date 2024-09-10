@@ -52,7 +52,7 @@ def collect_synapses(segment_id, base_dir):
     }
     pre_synapses = pre_synapses.rename(columns = rename_map)
     # save synapses so far
-    pre_synapses.to_csv(f"{basedir}{segment_id}_synapses.csv")
+    pre_synapses.to_csv(f"{base_dir}{segment_id}_synapses.csv")
 
     # get all synapses connection to neuron segment_id
     post_synapses = client.materialize.synapse_query(post_ids = segment_id, split_positions=True)
@@ -70,7 +70,7 @@ def collect_synapses(segment_id, base_dir):
     }
     post_synapses = post_synapses.rename(columns = rename_map)
     # append to previously created dataframe
-    post_synapses.to_csv(f"{basedir}{segment_id}_synapses.csv", mode="a", header=False)
+    post_synapses.to_csv(f"{base_dir}{segment_id}_synapses.csv", mode="a", header=False)
 
 
 if __name__ == "__main__":
