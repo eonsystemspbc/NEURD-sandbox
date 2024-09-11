@@ -10,10 +10,12 @@ if __name__ == "__main__":
     parser = argparse.ArgumentParser()
     parser.add_argument("--segment_id", default=864691136361538530, help="id of segment to download")
     parser.add_argument("--base_dir", default = "", help="base directory to save results in. Must end with /")
+    parser.add_argument("--verbose", default=True)
     args = parser.parse_args()
 
     segment_id = args.segment_id
     base_dir = args.base_dir
+    verbose = args.verbose
 
     mesh_decimated = vdi.fetch_segment_id_mesh(
         mesh_filepath = f"{base_dir}{segment_id}_decimated.off"

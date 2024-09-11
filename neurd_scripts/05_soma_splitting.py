@@ -52,6 +52,6 @@ if __name__ == "__main__":
         vdi.save_neuron_obj(
             n,
             directory=base_dir,
-            suffix=f"_split_{i}"
+            suffix=f"_split_{i}.pbz2"
         )
 

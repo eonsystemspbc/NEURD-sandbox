@@ -11,6 +11,7 @@ This repository collects a handful of scripts and notebooks to reshape connectom
 Setup a conda environment and install required packages via requirements.txt
 
 NEURD setup is described in the google doc
+
 ---
 
 ## Contents
