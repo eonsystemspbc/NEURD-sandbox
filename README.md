@@ -8,9 +8,9 @@ This repository collects a handful of scripts and notebooks to reshape connectom
 
 ## Installation
 
-Setup a conda environment and install required packages via requirements.txt
+NEURD setup is described in the google doc: https://docs.google.com/document/d/1IIAmKmSCQTzmLVO1-CM9M0bBhKibLPTZQlnY2NYGoeM/edit
 
-NEURD setup is described in the google doc
+Running other scripts requires you to setup a conda environment and install required packages via requirements.txt
 
 ---
 
