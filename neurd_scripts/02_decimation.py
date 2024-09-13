@@ -15,7 +15,7 @@ if __name__ == "__main__":
     parser.add_argument("--decimation_ratio", default=0.062, help="ratio by which to decimate mesh")
     args = parser.parse_args()
 
-    segment_id = args.segment_id
+    segment_id = int(args.segment_id)
     base_dir = args.base_dir
     decimation_ratio = args.decimation_ratio
 

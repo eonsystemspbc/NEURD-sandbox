@@ -13,7 +13,7 @@ if __name__ == "__main__":
     parser.add_argument("--verbose", default=True)
     args = parser.parse_args()
 
-    segment_id = args.segment_id
+    segment_id = int(args.segment_id)
     base_dir = args.base_dir
     verbose = args.verbose
 

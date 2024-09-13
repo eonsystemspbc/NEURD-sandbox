@@ -12,7 +12,7 @@ if __name__ == "__main__":
     parser.add_argument("--split_num", default=1, help="split to proofread")
     args = parser.parse_args()
 
-    segment_id = args.segment_id
+    segment_id = int(args.segment_id)
     base_dir = args.base_dir
     split_num = args.split_num
 
