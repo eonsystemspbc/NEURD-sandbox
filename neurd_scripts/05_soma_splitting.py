@@ -11,7 +11,7 @@ if __name__ == "__main__":
     parser.add_argument("--base_dir", default = "", help="base directory to save results in. Must end with /")
     args = parser.parse_args()
 
-    segment_id = args.segment_id
+    segment_id = int(args.segment_id)
     base_dir = args.base_dir
 
     mesh_decimated = vdi.fetch_segment_id_mesh(
